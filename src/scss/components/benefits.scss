@@ -1,0 +1,58 @@
+.benefits {
+  padding: var(--gap-section-y) 0;
+  position: relative;
+  z-index: 0;
+  &__inner {
+    background: $gradientAccent1;
+    padding: 80rem 0 90rem;
+    color: $greyLightColor;
+    border-radius: $radiusLg;
+    @media (max-width: $lg) {
+      padding: var(--gap-section-y) 0;
+      border-radius: $radiusSmm;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--gap-section-title);
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+  &__list {
+    counter-reset: benefits-card-counter;
+    position: relative;
+    z-index: 0;
+    &-row {
+      margin-bottom: var(--gap-fluid-);
+      @media (max-width: $xs) {
+        margin-bottom: var(--gap-container-);
+      }
+    }
+    &-col {
+      margin-bottom: var(--gap-fluid);
+      counter-increment: benefits-card-counter;
+      @media (max-width: $xs) {
+        max-width: 100%;
+        margin-bottom: var(--gap-container);
+        flex-basis: 100%;
+      }
+      &:not(:nth-child(2)) {
+        position: relative;
+        z-index: 2;
+        @media (max-width: $lg) {
+          z-index: 1;
+        }
+      }
+      &:not(:nth-child(1)) {
+        @media (max-width: $lg) {
+          z-index: 2;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

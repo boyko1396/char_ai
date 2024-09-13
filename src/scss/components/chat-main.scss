@@ -1,0 +1,187 @@
+.chat-main {
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    padding: var(--gap-fluid);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (max-width: $md) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    @media (max-width: $sm) {
+      padding-right: var(--gap-container);
+      padding-left: var(--gap-container);
+    }
+  }
+  &__gpt-version {
+    margin: 0 auto 42rem;
+    padding: 7rem;
+    border: 1px solid $blueLightColor;
+    border-radius: 30rem;
+    @media (max-width: $md) {
+      margin-bottom: 20rem;
+    }
+    @media (max-width: $sm) {
+      flex-grow: 1;
+    }
+    &-row {
+      margin: 0 -5rem;
+      display: flex;
+    }
+    &-col {
+      padding: 0 5rem;
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+    &-btn {
+      @extend %btn-reset;
+      width: 100%;
+      min-width: 150rem;
+      min-height: 34rem;
+      padding: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: var(--fs-10);
+      color: $greyMediumColor;
+      border-radius: 30rem;
+      flex-grow: 1;
+      transition: $transition;
+      white-space: nowrap;
+      cursor: pointer;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          color: $accentColor;
+        }
+      }
+      &.is-active {
+        background: $whiteColor;
+        color: $accentColor;
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+  &__char-appeal {
+    max-width: 100%;
+    flex: 0 0 100%;
+    @media (max-width: $sm) {
+      margin-right: 0;
+      margin-left: 0;
+      letter-spacing: -.01em;
+    }
+  }
+  &__message {
+  }
+  &__body {
+    flex-grow: 1;
+    overflow-x: hidden;
+    &-message {
+      &-list {
+        @media (max-width: $md) {
+          margin: 0 var(--gap-container-);
+          padding: 0 var(--gap-container);
+        }
+      }
+    }
+  }
+  &__footer {
+    margin-top: auto;
+    padding: var(--gap-fluid);
+    @media (max-width: $sm) {
+      padding: 10rem var(--gap-container) var(--gap-container);
+    }
+    &-hint {
+      margin: 0 var(--gap-fluid-) 0;
+      padding: 0 var(--gap-fluid) 6rem;
+      display: flex;
+      overflow-x: scroll;
+      &-wrapper {
+        padding: 0 0 6rem;
+        position: relative;
+      }
+      &-card {
+        flex-shrink: 0;
+        border-radius: $radiusMd;
+        white-space: nowrap;
+        &.is-active {
+          color: $accentColor;
+          border-color: $accentColor;
+        }
+        &:not(:last-child) {
+          margin-right: var(--gap);
+        }
+      }
+      &-dropdown {
+        padding: 0 0 6rem;
+        &-item {
+          &:not(.is-show) {
+            display: none;
+          }
+        }
+      }
+    }
+    &-form {
+      &-el {
+        position: relative;
+      }
+      &-textarea {
+      }
+      &-aside {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 12rem;
+        right: 24rem;
+        @media (max-width: $sm) {
+          right: 17rem;
+          bottom: 17rem;
+        }
+      }
+      &-max-symbol {
+        display: none;
+        @media (min-width: $sm-mf) {
+          margin-right: 10rem;
+          display: block;
+          font-size: var(--fs-11);
+          color: $greyDarkColor;
+          white-space: nowrap;
+        }
+        &.is-limit-exceeded {
+          color: $redColor;
+        }
+        &.is-limit-exceeded ~ .btn-send {
+          background: $greyDisabledColor;
+          color: $greyMediumColor;
+          pointer-events: none;
+        }
+      }
+      &-btn-send {
+        flex-shrink: 0;
+      }
+      &-textarea:placeholder-shown ~ .chat-main__footer-form-aside .btn-send {
+        background: $greyDisabledColor;
+        color: $greyMediumColor;
+        pointer-events: none;
+      }
+    }
+    &-action {
+      margin-bottom: 10rem;
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+        padding: 8rem 14rem;
+        border-radius: 40rem;
+      }
+      .btn__icon {
+        margin-right: 4rem;
+      }
+    }
+  }
+}

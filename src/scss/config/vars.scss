@@ -1,0 +1,119 @@
+$siteResolution: 1px;
+$mainFont: 'Open Sans';
+$mainWeight: 400;
+$lineHeight1: 1.3;
+$lineHeight2: 1.25;
+$lineHeight3: 1.2;
+$lineHeight4: 1.1;
+$lineHeight5: 1.15;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 1232rem;
+
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$radiusSm: 10rem;
+$radiusSmm: 15rem;
+$radiusSemi: 20rem;
+$radiusMd: 25rem;
+$radiusLg: 30rem;
+
+$whiteColor: #ffffff;
+$blackColor: #0D0D0D;
+$darkColor: #3B3B3B;
+$greyColor: #cccccc;
+$greyMediumColor: #737376;
+$greyLightColor: #F2F2F2;
+$greyNormalColor: #E8E8E8;
+$greyDisabledColor: #ECECEC;
+$greyCloseColor: #9A9A9A;
+$greyDarkColor: #C8C8C8;
+$redColor: #F02121;
+$blueColor: #5964DE;
+$blueLightColor: #759AFB;
+$blueMediumColor: #8C94FC;
+$blueNeutralColor: #779CFC;
+$blueDarkColor: #5886FF;
+$bluePurpleColor: #799EFF;
+$blueActiveColor: #E5ECFE;
+$blueHoverColor: #8AA5F4;
+$purpleLightColor: #B7C1FC;
+$purpleColor: #7137FF;
+$redColor: #FF3131;
+$accentColor: $blueColor;
+
+$bgSite: $greyLightColor;
+
+$gradientAccent1: linear-gradient(102.72deg, $blueMediumColor 6.58%, $purpleLightColor 79.56%);
+$gradientAccent2: linear-gradient(132.84deg, rgba(#1C4EFF, .72) 15.35%, rgba(#BFA2FF, .72) 87.95%);
+
+$fontFamily: $mainFont, Arial, sans-serif, Arial;
+$fontColor: $darkColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 70rem;
+  --fs-2: 45rem;
+  --fs-3: 35rem;
+  --fs-4: 30rem;
+  --fs-5: 22rem;
+  --fs-6: 16rem;
+  --fs-7: 20rem;
+  --fs-8: 18rem;
+  --fs-9: 16rem;
+  --fs-10: 14rem;
+  --fs-11: 12rem;
+  --fs-12: 10rem;
+
+  --gap: 12rem;
+  --gap-: -12rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+  --gap-container: 16rem;
+  --gap-container-: -16rem;
+
+  --gap-section-y: 75rem;
+  --gap-section-y-: -75rem;
+
+  --gap-section-title: 70rem;
+  --gap-section-title-: -70rem;
+
+  --scroll-offset: 128rem;
+
+  --header-height: var(--scroll-offset);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+    --fs-1: 40rem;
+    --fs-2: 30rem;
+    --fs-3: 20rem;
+    --fs-5: 20rem;
+
+    --gap-section-y: 45rem;
+    --gap-section-y-: -45rem;
+
+    --gap-section-title: 35rem;
+    --gap-section-title-: -35rem;
+
+    --scroll-offset: 102rem;
+  }
+}

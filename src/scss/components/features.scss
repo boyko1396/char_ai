@@ -1,0 +1,26 @@
+.features {
+  padding: var(--gap-section-y) 0;
+  position: relative;
+  z-index: 0;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--gap-section-title);
+    color: $blackColor;
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+  &__list {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: var(--gap-fluid);
+      }
+      &:nth-child(4) {
+        @media (max-width: $lg) {
+          z-index: -3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.footer {
+  padding: 75rem 0 72rem;
+  position: relative;
+  z-index: 1;
+  @media (max-width: $md) {
+    padding: 50rem 0;
+    text-align: center;
+  }
+  &:before {
+    background: rgba($greyColor, .21);
+    backdrop-filter: blur(22px);
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: $radiusSm $radiusSm 0 0 ;
+    z-index: -1;
+  }
+  &__container {
+  }
+  &__row {
+    @media (min-width: $md-mf) {
+    }
+    &-col {
+      & + & {
+        @media (max-width: $md) {
+          margin-top: 40rem;
+        }
+      }
+      &--logo {
+        flex-shrink: 0;
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &--nav {
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &--copyright {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+  &__logo {
+    width: 100%;
+    max-width: 176rem;
+    position: relative;
+    top: -13rem;
+    vertical-align: top;
+    @media (max-width: $lg) {
+      top: 0;
+      left: 4rem;
+    }
+  }
+  &__nav {
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 20rem;
+        @media (max-width: $md) {
+          margin-bottom: 15rem;
+        }
+      }
+    }
+    &-title {
+      margin: 0 0 32rem;
+      padding: 0;
+      @media (max-width: $md) {
+        margin-bottom: 25rem;
+      }
+    }
+    &-link {
+      display: block;
+      transition: $transition;
+      @media (max-width: $lg) {
+      }
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+  &__copyright {
+    margin: 0;
+    font-size: var(--fs-11);
+    color: $greyMediumColor;
+    @media (max-width: $md) {
+      margin-top: 10rem;
+    }
+  }
+}

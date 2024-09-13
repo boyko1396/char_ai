@@ -1,0 +1,20 @@
+.faq {
+  padding: var(--gap-section-y) 0 calc(2 * var(--gap-section-y));
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--gap-section-title);
+    color: $blackColor;
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+  &__list {
+    &-card {
+      border-bottom: 1px solid $blueColor;
+      &:first-child {
+        border-top: 1px solid $blueColor;
+      }
+    }
+  }
+}

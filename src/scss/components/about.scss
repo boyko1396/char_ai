@@ -1,0 +1,37 @@
+.about {
+  padding: var(--gap-section-y) 0;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--gap-section-title);
+    color: $blackColor;
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+  &__list {
+    @media (max-width: $sm) {
+      max-width: 384rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &-row {
+      margin-bottom: var(--gap-container-);
+    }
+    &-col {
+      margin-bottom: var(--gap-container);
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &:nth-child(even) {
+        .about-card {
+          background: rgba($blueMediumColor, .35);
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

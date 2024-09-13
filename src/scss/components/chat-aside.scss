@@ -1,0 +1,194 @@
+.chat-aside {
+  display: flex;
+  &__inner {
+    width: 100%;
+    padding: 36rem 24rem 24rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    @media (max-width: $md) {
+      padding: 24rem var(--gap-container) var(--gap-container);
+    }
+  }
+  &__header {
+    padding-bottom: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-logo {
+      max-width: 74rem;
+      margin-bottom: 35rem;
+      flex: 0 0 74rem;
+      position: relative;
+      top: 4rem;
+      @media (max-width: $md) {
+        margin-top: 6rem;
+        margin-bottom: 26rem;
+        top: 0;
+      }
+    }
+    &-btn-new-chat {
+      margin: 0 0 35rem;
+      @media (max-width: $md) {
+        width: 100%;
+        margin-bottom: 25rem;
+        flex-basis: 100%;
+      }
+    }
+    &-nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+      button {
+        @media (max-width: $md) {
+          font-size: var(--fs-10);
+        }
+      }
+      &.js-chat-subnav {
+        margin-top: 15rem;
+        &:not(.is-show) {
+          display: none;
+        }
+        button {
+          font-size: var(--fs-10);
+          @media (max-width: $md) {
+            font-size: var(--fs-11);
+          }
+        }
+      }
+      &-item {
+        margin: 0;
+        padding: 0;
+        &:not(:last-child) {
+          margin-right: 30rem;
+        }
+      }
+      &-btn {
+        @extend %btn-reset;
+        width: 100%;
+        padding: 4rem;
+        display: block;
+        font-weight: bold;
+        font-size: var(--fs-6);
+        color: $greyMediumColor;
+        border-bottom: 1px solid transparent;
+        text-align: center;
+        transition: $transition;
+        cursor: pointer;
+        &:hover {
+          @media (min-width: $lg-mf) {
+            color: $accentColor;
+          }
+        }
+        &:focus,
+        &:active {
+        }
+        &.is-active {
+          color: $accentColor;
+          border-bottom-color: currentColor;
+        }
+      }
+    }
+    &-btn-close {
+      @extend %area-click, %btn-reset;
+      width: 30rem;
+      height: 30rem;
+      margin: -1rem 0 0 auto;
+      flex-shrink: 0;
+      color: $blueLightColor;
+      @media (max-width: $md) {
+        margin-top: -3rem;
+        margin-bottom: 25rem;
+      }
+      .u-icon {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+  &__body {
+    margin: 0 -24rem;
+    padding: 0 24rem;
+    flex-grow: 1;
+    overflow-y: auto;
+    &-tab-content {
+      &:not(.is-show) {
+        display: none;
+      }
+    }
+    &-tabsub-content {
+      &:not(.is-show) {
+        display: none;
+      }
+    }
+    &-list {
+      &-card {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 7rem;
+        }
+      }
+    }
+    &-history {
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 7rem;
+        }
+      }
+      &-empty {
+        margin: 0;
+        font-weight: 600;
+        font-size: var(--fs-10);
+        text-align: center;
+      }
+    }
+  }
+  &__footer {
+    margin-top: auto;
+    padding-top: 35rem;
+    &-nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10rem;
+      list-style-type: none;
+      @media (max-width: $md) {
+        flex-wrap: wrap;
+      }
+      &-item {
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        @media (max-width: $md) {
+          width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &-btn {
+        width: 100%;
+        padding-right: 8rem;
+        padding-left: 8rem;
+        color: $greyMediumColor;
+        &:hover {
+          @media (min-width: $lg-mf) {
+            color: $accentColor;
+          }
+        }
+        &.is-active {
+          color: $accentColor;
+        }
+        .btn__icon {
+          color: $accentColor;
+          @media (max-width: $md) {
+            margin-right: 0;
+            margin-left: 10rem;
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+}
