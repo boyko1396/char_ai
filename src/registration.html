@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Char AI - Registration'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <main class="user-page">
+          <div class="container container--size-md user-page__container">
+            <div class="login-block user-page__inner">
+              <div class="row login-block__row">
+                <div class="row__col--6 login-block__col login-block__col--content">
+                  <div class="login-block__content">
+                    <picture class="login-block__bg">
+                      <source
+                        srcset="images/login-block-bg-2.webp"
+                        type="image/webp">
+                      <img
+                        src="images/login-block-bg-2.jpg"
+                        alt="Попробуйте чат  за 1 ₽"
+                        width="714"
+                        height="578">
+                    </picture>
+                    <div class="login-block__benefits">
+                      <div class="login-block__benefits-row">
+                        <div class="login-block__benefits-col login-block__benefits-col--left">
+                          <div class="login-block__benefits-card">
+                            <picture class="login-block__benefits-card-picture">
+                              <source
+                                srcset="images/intro-benefits-icon-1.webp"
+                                type="image/webp">
+                              <img
+                                src="images/intro-benefits-icon-1.png"
+                                alt="Работа без VPN"
+                                width="50"
+                                height="50">
+                            </picture>
+                            <p class="login-block__benefits-card-title">Работа без VPN</p>
+                          </div>
+                          <div class="login-block__benefits-card">
+                            <picture class="login-block__benefits-card-picture">
+                              <source
+                                srcset="images/intro-benefits-icon-3.webp"
+                                type="image/webp">
+                              <img
+                                src="images/intro-benefits-icon-3.png"
+                                alt="Нет лимитов"
+                                width="50"
+                                height="50">
+                            </picture>
+                            <p class="login-block__benefits-card-title">Нет лимитов</p>
+                          </div>
+                          <div class="login-block__benefits-card">
+                            <picture class="login-block__benefits-card-picture">
+                              <source
+                                srcset="images/intro-benefits-icon-2.webp"
+                                type="image/webp">
+                              <img
+                                src="images/intro-benefits-icon-2.png"
+                                alt="Высокая скорость"
+                                width="50"
+                                height="50">
+                            </picture>
+                            <p class="login-block__benefits-card-title">Высокая скорость</p>
+                          </div>
+                        </div>
+                        <div class="login-block__benefits-col login-block__benefits-col--right">
+                          <div class="login-block__benefits-card">
+                            <div class="login-block__benefits-card-inner">
+                              <p class="title fs-4 login-block__benefits-card-estimation">4.9</p>
+                              <div class="u-rating u-rating--theme-white login-block__benefits-card-rating" style="--rating-progress: 4.9"></div>
+                              <p class="login-block__benefits-card-description">Средняя оценка тысяч пользователей</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--6 login-block__col login-block__col--form">
+                  <div class="login-block__form-wrapper">
+                    <p class="title fs-3 login-block__title">Попробуйте чат <br>за&nbsp;1&nbsp;₽</p>
+                    <p class="login-block__subtitle">Просто пройдите короткую&nbsp;регистрацию</p>
+                    <form action="#" class="login-block__form">
+                      <div class="u-input login-block__form-input">
+                        <label class="u-input__label">
+                          <input type="email" name="email" class="u-input__el u-input__el--type-text u-input__el--size-md u-input__el--theme-grey-outline" required placeholder="mail@example.com">
+                        </label>
+                      </div>
+                      <div class="u-input login-block__form-input">
+                        <label class="u-input__label">
+                          <input type="password" name="password" class="u-input__el u-input__el--type-text u-input__el--size-md u-input__el--theme-grey-outline" required placeholder="Пароль">
+                        </label>
+                      </div>
+                      <div class="login-block__form-footer">
+                        <button type="submit" class="btn btn--size-md btn--theme-accent-fill login-block__form-footer-btn" disabled>
+                          <span class="btn__inner">
+                            <span class="btn__title">Отправить</span>
+                          </span>
+                        </button>
+                      </div>
+                    </form>
+                    <div class="u-privacy login-block__privacy">
+                      <p>Нажимая на кнопку, вы соглашаетесь с&nbsp;нашими <a href="terms.html" target="_blank">Условиями использования</a> и&nbsp;<a href="privacy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                    <div class="sc-auth login-block__sc-auth">
+                      <p class="fs-6 sc-auth__title">Регистрация через соц сети</p>
+                      <ul class="sc-auth__list">
+                        <li class="sc-auth__list-item">
+                          <button type="button" class="sc-auth__list-btn">
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#yandex-color"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="sc-auth__list-item">
+                          <button type="button" class="sc-auth__list-btn">
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#vk-color"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="sc-auth__list-item">
+                          <button type="button" class="sc-auth__list-btn">
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#google-color"></use>
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="login-block__router">
+                      <p class="title fs-6 login-block__router-title">Уже есть аккаунт?</p>
+                      <button type="button" data-modal="popup-login" class="router-btn router-btn--theme-accent login-block__router-btn">Войти</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

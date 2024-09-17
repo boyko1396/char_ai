@@ -14,174 +14,123 @@
   <meta name="msapplication-TileColor" content="#5964de">
   <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
   <meta name="theme-color" content="#5964de">
-  <title>Char AI - Offer</title>
+  <title>Char AI - Registration</title>
 </head>
 <body class="u-scrollbar">
 
   <div id="root" class="site">
     <div class="site__inner">
-
-      <header class="header site__header">
-        <div class="container container--size-md header__container">
-          <div class="header__inner">
-            <a href="/" class="logo logo--size-sm header__logo">
-              <picture class="logo__img">
-                <img src="images/logo-type-1.svg" width="116" height="42" alt="Char AI"></picture>
-            </a>
-            <button type="button" class="d-lg-block header__dropdown-toggle js-header-toggle header__dropdown-toggle--close">
-              <svg class="u-icon">
-                <use xlink:href="images/icons/icons.svg#menu-close"></use>
-              </svg>
-            </button>
-            <div class="header__dropdown">
-              <div class="d-lg-block header__dropdown-top">
-                <a href="/" class="logo logo--size-sm header__dropdown-logo">
-                  <picture class="logo__img">
-                    <img src="images/logo-type-1.svg" width="116" height="42" alt="Char AI"></picture>
-                </a>
-              </div>
-              <nav class="header__nav" role="navigation">
-                <ul class="header__nav-list">
-                  <li class="header__nav-item">
-                    <a href="/#features" class="js-anchor header__nav-link">Возможности</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="/#target-audience" class="js-anchor header__nav-link">Для кого</a>
-                  </li>
-                  <li class="d-lg-block header__nav-item">
-                    <a href="/#benefits" class="js-anchor header__nav-link">Особенности</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="/#reviews" class="js-anchor header__nav-link">Отзывы</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="/#faq" class="js-anchor header__nav-link">FAQ</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="btn-group header__btn-group">
-                <div class="btn-group__inner">
-                  <div class="btn-group__col">
-                    <button type="button" data-modal="popup-login" class="btn btn--size-md btn--theme-white-fill btn-group__item">
-                      <span class="btn__inner">
-                        <span class="btn__title">Вход</span>
-                      </span>
-                    </button>
+      <main class="user-page">
+        <div class="container container--size-md user-page__container">
+          <div class="login-block user-page__inner">
+            <div class="login-block__row row">
+              <div class="login-block__col row__col--6 login-block__col--content">
+                <div class="login-block__content">
+                  <picture class="login-block__bg">
+                    <source srcset="images/login-block-bg-2.webp" type="image/webp">
+                    <img src="images/login-block-bg-2.jpg" alt="Попробуйте чат  за 1 ₽" width="714" height="578"></picture>
+                  <div class="login-block__benefits">
+                    <div class="login-block__benefits-row">
+                      <div class="login-block__benefits-col login-block__benefits-col--left">
+                        <div class="login-block__benefits-card">
+                          <picture class="login-block__benefits-card-picture">
+                            <source srcset="images/intro-benefits-icon-1.webp" type="image/webp">
+                            <img src="images/intro-benefits-icon-1.png" alt="Работа без VPN" width="50" height="50"></picture>
+                          <p class="login-block__benefits-card-title">Работа без VPN</p>
+                        </div>
+                        <div class="login-block__benefits-card">
+                          <picture class="login-block__benefits-card-picture">
+                            <source srcset="images/intro-benefits-icon-3.webp" type="image/webp">
+                            <img src="images/intro-benefits-icon-3.png" alt="Нет лимитов" width="50" height="50"></picture>
+                          <p class="login-block__benefits-card-title">Нет лимитов</p>
+                        </div>
+                        <div class="login-block__benefits-card">
+                          <picture class="login-block__benefits-card-picture">
+                            <source srcset="images/intro-benefits-icon-2.webp" type="image/webp">
+                            <img src="images/intro-benefits-icon-2.png" alt="Высокая скорость" width="50" height="50"></picture>
+                          <p class="login-block__benefits-card-title">Высокая скорость</p>
+                        </div>
+                      </div>
+                      <div class="login-block__benefits-col login-block__benefits-col--right">
+                        <div class="login-block__benefits-card">
+                          <div class="login-block__benefits-card-inner">
+                            <p class="title fs-4 login-block__benefits-card-estimation">4.9</p>
+                            <div class="login-block__benefits-card-rating u-rating u-rating--theme-white" style="--rating-progress: 4.9"></div>
+                            <p class="login-block__benefits-card-description">Средняя оценка тысяч пользователей</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="btn-group__col">
-                    <button type="button" data-modal="popup-registration" class="btn btn--size-md btn--theme-accent-fill btn-group__item">
-                      <span class="btn__inner">
-                        <span class="btn__title">Регистрация</span>
-                      </span>
-                    </button>
+                </div>
+              </div>
+              <div class="login-block__col row__col--6 login-block__col--form">
+                <div class="login-block__form-wrapper">
+                  <p class="title fs-3 login-block__title">
+                    Попробуйте чат
+                    <br>за&nbsp;1&nbsp;₽</p>
+                  <p class="login-block__subtitle">Просто пройдите короткую&nbsp;регистрацию</p>
+                  <form action="#" class="login-block__form">
+                    <div class="u-input login-block__form-input">
+                      <label class="u-input__label">
+                        <input type="email" name="email" class="u-input__el u-input__el--size-md u-input__el--theme-grey-outline u-input__el--type-text" required placeholder="mail@example.com"></label>
+                    </div>
+                    <div class="u-input login-block__form-input">
+                      <label class="u-input__label">
+                        <input type="password" name="password" class="u-input__el u-input__el--size-md u-input__el--theme-grey-outline u-input__el--type-text" required placeholder="Пароль"></label>
+                    </div>
+                    <div class="login-block__form-footer">
+                      <button type="submit" class="btn btn--size-md btn--theme-accent-fill login-block__form-footer-btn" disabled="disabled">
+                        <span class="btn__inner">
+                          <span class="btn__title">Отправить</span>
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                  <div class="login-block__privacy u-privacy">
+                    <p>
+                      Нажимая на кнопку, вы соглашаетесь с&nbsp;нашими
+                      <a href="terms.html" target="_blank">Условиями использования</a>
+                      и&nbsp;
+                      <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+                    </p>
+                  </div>
+                  <div class="login-block__sc-auth sc-auth">
+                    <p class="fs-6 sc-auth__title">Регистрация через соц сети</p>
+                    <ul class="sc-auth__list">
+                      <li class="sc-auth__list-item">
+                        <button type="button" class="sc-auth__list-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#yandex-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="sc-auth__list-item">
+                        <button type="button" class="sc-auth__list-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#vk-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="sc-auth__list-item">
+                        <button type="button" class="sc-auth__list-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#google-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="login-block__router">
+                    <p class="title fs-6 login-block__router-title">Уже есть аккаунт?</p>
+                    <button type="button" data-modal="popup-login" class="router-btn router-btn--theme-accent login-block__router-btn">Войти</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button type="button" class="d-lg-block header__dropdown-toggle js-header-toggle header__dropdown-toggle--open">
-              <svg class="u-icon">
-                <use xlink:href="images/icons/icons.svg#menu-open"></use>
-              </svg>
-            </button>
           </div>
         </div>
-        <div class="d-lg-block header__overlay js-header-toggle-close"></div>
-      </header>
-
-      <main role="main" class="site__main">
-
-        <section class="page">
-          <div class="container container--size-md page__container">
-            <div class="page__breadcrumbs u-breadcrumbs">
-              <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                  <a href="/" itemprop="item">
-                    <span itemprop="name">Главная</span>
-                  </a>
-                  <meta itemprop="position" content="1"></li>
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                  <span itemprop="name">Договор оферты</span>
-                  <meta itemprop="position" content="2"></li>
-              </ul>
-            </div>
-            <h1 class="fs-2 page__title">Договор оферты</h1>
-            <div class="page__privacy">
-              <div class="row page__privacy-row">
-                <div class="page__privacy-col page__privacy-col--content row__col--10">
-                  <div class="page__text u-content">
-                    <p>Текст договора</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
       </main>
-
-      <footer class="footer site__footer">
-        <picture class="decor decor--11">
-          <source srcset="images/decor-11.webp, images/decor-11@2x.webp 2x" type="image/webp">
-          <img srcset="images/decor-11.png, images/decor-11@2x.png 2x" src="images/decor-11.png" alt="" width="554" height="554"></picture>
-        <div class="container container--size-md footer__container">
-          <div class="row footer__row">
-            <div class="footer__row-col row__col--3 footer__row-col--logo">
-              <a href="/" class="logo logo--size-sm footer__logo">
-                <picture class="logo__img">
-                  <img src="images/logo-type-1.svg" width="116" height="42" alt="Char AI"></picture>
-              </a>
-            </div>
-            <div class="footer__row-col row__col--3 footer__row-col--nav">
-              <nav class="footer__nav" role="navigation">
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <p class="title footer__nav-title fs-5">Работа нейросети</p>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="/#features" class="js-anchor footer__nav-link">Возможности</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="/#target-audience" class="js-anchor footer__nav-link">Для кого</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="/#reviews" class="js-anchor footer__nav-link">Отзывы</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="/#faq" class="js-anchor footer__nav-link">FAQ</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__row-col row__col--3 footer__row-col--nav">
-              <nav class="footer__nav" role="navigation">
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <p class="title footer__nav-title fs-5">Полезное для вас</p>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="contacts.html" class="footer__nav-link">Контакты</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="privacy.html" class="footer__nav-link">Политика конфиденциальности</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="terms.html" class="footer__nav-link">Условия использования</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="offer.html" class="footer__nav-link">Договор оферты</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__row-col row__col--3 footer__row-col--copyright">
-              <p class="footer__copyright">
-                © 2024 Char&nbsp;AI.&nbsp;
-                <br>Все права защищены</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-
     </div>
     <div class="u-scrollbar popup" data-popup="popup-login" data-close-overlay>
       <div class="popup__wrapper" data-close-overlay>
@@ -192,7 +141,7 @@
             </svg>
           </button>
           <div class="popup__inner login-block">
-            <div class="row login-block__row">
+            <div class="login-block__row row">
               <div class="login-block__col row__col--6 login-block__col--content">
                 <div class="login-block__content login-block__content--modal">
                   <picture class="login-block__bg">
@@ -316,7 +265,7 @@
             </svg>
           </button>
           <div class="popup__inner login-block">
-            <div class="row login-block__row">
+            <div class="login-block__row row">
               <div class="login-block__col row__col--6 login-block__col--content">
                 <div class="login-block__content login-block__content--modal">
                   <picture class="login-block__bg">
@@ -435,7 +384,7 @@
             </svg>
           </button>
           <div class="popup__inner login-block">
-            <div class="row login-block__row">
+            <div class="login-block__row row">
               <div class="login-block__col row__col--6 login-block__col--content">
                 <div class="login-block__content login-block__content--modal">
                   <picture class="login-block__bg">

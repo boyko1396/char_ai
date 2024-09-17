@@ -1,0 +1,13 @@
+.user-page {
+  &__container {
+    min-height: 100svh;
+    min-height: calc(var(--vh, 1vh)* 100);
+    padding-top: 32rem;
+    padding-bottom: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__inner {
+  }
+}
